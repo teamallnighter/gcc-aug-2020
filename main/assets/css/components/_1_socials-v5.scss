@@ -1,0 +1,73 @@
+/* -------------------------------- 
+
+File#: _1_socials-v5
+Title: Socials v5
+Descr: Section with newsletter form and links to social media accounts
+Usage: codyhouse.co/license
+
+-------------------------------- */
+
+.socials-v5 {}
+
+.socials-v5__grid-item {
+  &:first-of-type {
+    margin-bottom: var(--space-md);
+  }
+}
+
+.socials-v5__btns {
+  justify-content: center;
+}
+
+.socials-v5__btn {
+  display: inline-block;
+  padding: var(--space-sm);
+  background: var(--color-contrast-lower);
+  border-radius: 50%;
+  transition: .2s;
+
+  .icon {
+    display: block;
+    color: var(--color-contrast-high);
+    transition: color .2s;
+  }
+
+  &:hover {
+    background-color: var(--color-bg);
+    box-shadow: var(--shadow-sm);
+
+    .icon {
+      color: var(--color-primary);
+    }
+  }
+}
+
+@include breakpoint(md) {
+  @supports (grid-area: auto) {
+    .socials-v5 {
+      background: linear-gradient(90deg, var(--color-bg) 50%, var(--color-contrast-lower) 50%);
+    }
+
+    .socials-v5__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+
+    .socials-v5__grid-item {
+      &:first-of-type {
+        margin-bottom: 0; // reset
+      }
+    }
+
+    .socials-v5__form {
+      width: 60%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .socials-v5__btn {
+      background-color: var(--color-bg);
+    }
+  }
+}
