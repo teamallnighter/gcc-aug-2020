@@ -2,7 +2,12 @@
   "name": "guardian",
   "version": "0.0.1",
   "scripts": {
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "deploy": "gulp sass && gulp scripts && ntl deploy --prod",
+    "build": "gulp sass && gulp scripts && ntl build",
+    "build-deploy": "gulp sass && gulp scripts && ntl build && ntl deploy --prod",
+    "dev": "gulp watch",
+    "build-deploy-dev": "gulp sass && gulp scripts && ntl build && ntl deploy --prod && gulp watch"
   },
   "devDependencies": {
     "autoprefixer": "^9.4.3",
