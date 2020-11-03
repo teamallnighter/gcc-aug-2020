@@ -2,10 +2,7 @@
   "name": "guardian",
   "version": "0.0.1",
   "scripts": {
-    "gulp": "gulp",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gulp sass && gulp scripts && ntl deploy --prod && gulp watch",
-    "build-deploy": "gulp sass && gulp scripts && ntl build && ntl deploy --prod"
+    "gulp": "gulp"
   },
   "devDependencies": {
     "autoprefixer": "^9.4.3",
