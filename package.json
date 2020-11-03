@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "scripts": {
     "gulp": "gulp",
-    "test": "echo \"Error: no test specified\" && exit 1"
-
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gulp sass && gulp scripts && ntl deploy --prod && gulp watch",
+    "build-deploy": "gulp sass && gulp scripts && ntl build && ntl deploy --prod"
   },
   "devDependencies": {
     "autoprefixer": "^9.4.3",
@@ -12,7 +13,9 @@
     "codyhouse-framework": "^2.5.4",
     "gulp": "^4.0.0",
     "gulp-build": "^0.5.3",
+    "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
+    "gulp-minify": "^3.1.0",
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
@@ -20,5 +23,8 @@
     "gulp-uglify": "^3.0.2",
     "postcss-calc": "^7.0.1",
     "postcss-css-variables": "git+https://github.com/CodyHouse/postcss-css-variables"
+  },
+  "dependencies": {
+    "cwebp": "^2.0.5"
   }
 }

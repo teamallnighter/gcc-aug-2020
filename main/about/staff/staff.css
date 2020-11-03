@@ -1,0 +1,33 @@
+  .staff-card{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 5vh 0vw;
+
+      background-color: rgb(228, 226, 226);
+
+      padding: 2vh 5vw;
+
+      border-radius: 20px;
+      box-shadow: 2px 4px 6px grey;
+  }
+
+  .staff-card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.staff-card-heading{
+    text-align: center;
+}
+
+.staff-card-position{
+    text-align: center;
+}
+
+.staff-card-description{
+    text-align: center;
+}

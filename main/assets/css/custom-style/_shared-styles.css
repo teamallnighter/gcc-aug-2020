@@ -5,3 +5,7 @@
 #landcape-snow {
   background-image: url("https://source.unsplash.com/TDiWmXb9-qk");
 }
+
+.user-cell__img{
+  box-shadow: 2px 4px 8px grey;
+}

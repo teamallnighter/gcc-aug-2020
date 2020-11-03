@@ -1,0 +1,14 @@
+[build]
+publish = "main"
+
+[[plugins]]
+package = "@netlify/plugin-sitemap"
+
+  [plugins.inputs]
+  buildDir = "main"
+
+[[plugins]]
+  package = "netlify-plugin-submit-sitemap"
+
+	[[plugins]]
+package = "netlify-plugin-image-optim"

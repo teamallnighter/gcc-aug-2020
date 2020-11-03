@@ -11,6 +11,7 @@ var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 var build = require('gulp-build');
 
+
 // js file paths
 var utilJsPath = 'node_modules/codyhouse-framework/main/assets/js'; // util.js path - you may need to update this if including the framework as external node module
 var componentsJsPath = 'main/assets/js/components/*.js'; // component js files

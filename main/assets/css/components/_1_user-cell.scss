@@ -17,7 +17,9 @@ Usage: codyhouse.co/license
 
   background: var(--color-contrast-lower);
   padding: var(--space-sm);
-  border-radius: var(--radius-md);
+  border-radius: 20px;
+
+  box-shadow: 2px 4px 8px grey;
 }
 
 .user-cell__img {
@@ -26,6 +28,7 @@ Usage: codyhouse.co/license
   width: var(--user-cell-img-size);
   height: var(--user-cell-img-size);
   margin-bottom: var(--space-sm);
+  box-shadow: 2px 4px 8px grey;
 }
 
 .user-cell__content {
